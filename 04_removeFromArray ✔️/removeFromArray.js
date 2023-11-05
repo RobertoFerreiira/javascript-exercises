@@ -1,12 +1,10 @@
-const removeFromArray = function(arr, num) {
+const removeFromArray = function(arr, num, numtwo, numthree, numfour) {
     let arr2 = [];
     arr.forEach((item) => {
-        if(item !== num){
+        if(item !== num && item !== numtwo && item !== numthree && item !== numfour){
             arr2.push(item)
         }
     })
     return arr2;
 };
-console.log(removeFromArray([1,2,3,4], 3))
-// Do not edit below this line
 module.exports = removeFromArray;
